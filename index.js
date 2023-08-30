@@ -1,6 +1,7 @@
 // index.js
 const express = require('express');
 const cors = require('cors');
+const db = require('./db.js')
 
 const app = express();
 app.use(express.json());
@@ -16,4 +17,4 @@ app.listen(port, () => {
     console.log("Server is running on port "+ port)
 })
 
-module.exports = app;3
+module.exports = app;
